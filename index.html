@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Game</title>
+  <!-- Fonte divertida inspirada no Clash Royale -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Simon Game</h1>
+    <div class="game">
+      <div class="button green" data-color="green"></div>
+      <div class="button red" data-color="red"></div>
+      <div class="button yellow" data-color="yellow"></div>
+      <div class="button blue" data-color="blue"></div>
+    </div>
+    <button class="start-btn">Start Game</button>
+    <div class="score-container">
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="highscore">Highscore: <span id="highscore">0</span></div>
+    </div>
+  </div>
+  
+  <!-- Áudios -->
+  <audio id="green-sound" src="sounds/green.mp3" preload="auto"></audio>
+  <audio id="red-sound" src="sounds/red.mp3" preload="auto"></audio>
+  <audio id="yellow-sound" src="sounds/yellow.mp3" preload="auto"></audio>
+  <audio id="blue-sound" src="sounds/blue.mp3" preload="auto"></audio>
+  <audio id="wrong-sound" src="sounds/wrong.mp3" preload="auto"></audio>
+  
+  <script src="script.js"></script>
+</body>
+</html>
